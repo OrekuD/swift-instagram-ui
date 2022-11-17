@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79070ABC2925DDE200F8488A /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79070ABB2925DDE200F8488A /* ReelsView.swift */; };
+		79070ABE2925DE1C00F8488A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79070ABD2925DE1C00F8488A /* SearchView.swift */; };
 		79DDE54A292277AB0035F375 /* InstagramCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDE549292277AB0035F375 /* InstagramCloneApp.swift */; };
 		79DDE54C292277AB0035F375 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDE54B292277AB0035F375 /* ContentView.swift */; };
 		79DDE54E292277AC0035F375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DDE54D292277AC0035F375 /* Assets.xcassets */; };
-		79DDE551292277AC0035F375 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DDE550292277AC0035F375 /* Preview Assets.xcassets */; };
 		79DDE55B292277AD0035F375 /* InstagramCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDE55A292277AD0035F375 /* InstagramCloneTests.swift */; };
 		79DDE565292277AD0035F375 /* InstagramCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDE564292277AD0035F375 /* InstagramCloneUITests.swift */; };
 		79DDE567292277AD0035F375 /* InstagramCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDE566292277AD0035F375 /* InstagramCloneUITestsLaunchTests.swift */; };
+		79DDE5742925AB1B0035F375 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDE5732925AB1B0035F375 /* ShopView.swift */; };
+		79DDE5762925AB440035F375 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDE5752925AB440035F375 /* ProfileView.swift */; };
+		79DDE5782925AE4F0035F375 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDE5772925AE4F0035F375 /* HomeView.swift */; };
+		79DDE57A2925B0280035F375 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDE5792925B0280035F375 /* CustomTabView.swift */; };
+		79DDE57C2925B1CE0035F375 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDE57B2925B1CE0035F375 /* Tabs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +40,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79070ABB2925DDE200F8488A /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
+		79070ABD2925DE1C00F8488A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		79DDE546292277AB0035F375 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DDE549292277AB0035F375 /* InstagramCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneApp.swift; sourceTree = "<group>"; };
 		79DDE54B292277AB0035F375 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79DDE54D292277AC0035F375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		79DDE550292277AC0035F375 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79DDE556292277AD0035F375 /* InstagramCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DDE55A292277AD0035F375 /* InstagramCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneTests.swift; sourceTree = "<group>"; };
 		79DDE560292277AD0035F375 /* InstagramCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DDE564292277AD0035F375 /* InstagramCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneUITests.swift; sourceTree = "<group>"; };
 		79DDE566292277AD0035F375 /* InstagramCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79DDE5732925AB1B0035F375 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		79DDE5752925AB440035F375 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		79DDE5772925AE4F0035F375 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		79DDE5792925B0280035F375 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		79DDE57B2925B1CE0035F375 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,20 +106,14 @@
 		79DDE548292277AB0035F375 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				79DDE57D2925C3DE0035F375 /* Views */,
 				79DDE549292277AB0035F375 /* InstagramCloneApp.swift */,
 				79DDE54B292277AB0035F375 /* ContentView.swift */,
+				79DDE57B2925B1CE0035F375 /* Tabs.swift */,
 				79DDE54D292277AC0035F375 /* Assets.xcassets */,
-				79DDE54F292277AC0035F375 /* Preview Content */,
+				79DDE5792925B0280035F375 /* CustomTabView.swift */,
 			);
 			path = InstagramClone;
-			sourceTree = "<group>";
-		};
-		79DDE54F292277AC0035F375 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				79DDE550292277AC0035F375 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		79DDE559292277AD0035F375 /* InstagramCloneTests */ = {
@@ -125,6 +131,18 @@
 				79DDE566292277AD0035F375 /* InstagramCloneUITestsLaunchTests.swift */,
 			);
 			path = InstagramCloneUITests;
+			sourceTree = "<group>";
+		};
+		79DDE57D2925C3DE0035F375 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79DDE5732925AB1B0035F375 /* ShopView.swift */,
+				79070ABB2925DDE200F8488A /* ReelsView.swift */,
+				79070ABD2925DE1C00F8488A /* SearchView.swift */,
+				79DDE5772925AE4F0035F375 /* HomeView.swift */,
+				79DDE5752925AB440035F375 /* ProfileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79DDE551292277AC0035F375 /* Preview Assets.xcassets in Resources */,
 				79DDE54E292277AC0035F375 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79070ABC2925DDE200F8488A /* ReelsView.swift in Sources */,
+				79070ABE2925DE1C00F8488A /* SearchView.swift in Sources */,
+				79DDE57C2925B1CE0035F375 /* Tabs.swift in Sources */,
+				79DDE5762925AB440035F375 /* ProfileView.swift in Sources */,
+				79DDE5742925AB1B0035F375 /* ShopView.swift in Sources */,
 				79DDE54C292277AB0035F375 /* ContentView.swift in Sources */,
+				79DDE57A2925B0280035F375 /* CustomTabView.swift in Sources */,
+				79DDE5782925AE4F0035F375 /* HomeView.swift in Sources */,
 				79DDE54A292277AB0035F375 /* InstagramCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +449,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +479,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
