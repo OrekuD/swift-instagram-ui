@@ -92,6 +92,7 @@ struct Stories: View {
 struct Post: View {
     @State var isContentSheetOpen: Bool = false;
     
+    
     var body: some View {
         VStack {
             HStack {
@@ -100,7 +101,12 @@ struct Post: View {
                     Text("Ruffles").font(.footnote).bold()
                 }
                 Spacer()
-                Image(systemName: "ellipsis")
+                Button {
+                    isContentSheetOpen.toggle()
+                } label: {
+                    Image(systemName: "ellipsis")
+                }.foregroundColor(.black)
+                
             }.padding(.horizontal, 15).padding(.top, 2)
             Image("post1").resizable().frame(width: .infinity).aspectRatio(contentMode: .fit)
             VStack(alignment: .leading) {
@@ -135,6 +141,106 @@ struct Post: View {
                 Text("2 minutes ago").font(.caption2).foregroundColor(.secondary)
             }.padding(.horizontal, 15)
             
-        }.padding(.bottom, 6)
+        }.padding(.bottom, 6).sheet(isPresented: $isContentSheetOpen) {
+            VStack(alignment: .leading, spacing: 0) {
+                GeometryReader {proxy in
+                    VStack {
+                        HStack(spacing: 0) {
+                            Button  {
+                                print("jdj")
+                            } label: {
+                                ShareButton(size: (proxy.size.width / 4) - 16, label: "Share", iconName: "square.and.arrow.up")
+                            }.frame(width: proxy.size.width / 4)
+                            
+                            Button  {
+                                print("jdj")
+                            } label: {
+                                ShareButton(size: (proxy.size.width / 4) - 16, label: "Link", iconName: "link")
+                            }.frame(width: proxy.size.width / 4)
+                            
+                            Button  {
+                                print("jdj")
+                            } label: {
+                                ShareButton(size: (proxy.size.width / 4) - 16, label: "Save", iconName: "bookmark")
+                            }.frame(width: proxy.size.width / 4)
+                            
+                            Button  {
+                                print("jdj")
+                            } label: {
+                                ShareButton(size: (proxy.size.width / 4) - 16, label: "QR Code", iconName: "qrcode.viewfinder")
+                            }.frame(width: proxy.size.width / 4)
+                            
+                        }.frame(width: .infinity, height: proxy.size.width / 4).padding(.bottom, 4)
+                        
+                        VStack(spacing: 0) {
+                            Button {
+                                
+                            } label: {
+                                ShareRowButton(width: proxy.size.width - 16, label: "Add to Favourites", iconName: "star")
+                            }.foregroundColor(.black)
+                            Divider()
+                            Button {
+                                
+                            } label: {
+                                ShareRowButton(width: proxy.size.width - 16, label: "Unfollow", iconName: "person")
+                            }.foregroundColor(.black)
+                        }.background(Color(uiColor: .secondarySystemBackground)).cornerRadius(12)
+                        VStack {
+                            
+                        }.frame(height: 6)
+                        VStack(spacing: 0) {
+                            Button {
+                                
+                            } label: {
+                                ShareRowButton(width: proxy.size.width - 16, label: "Why you're seeing this post", iconName: "info.circle")
+                            }.foregroundColor(.black)
+                            Divider()
+                            Button {
+                                
+                            } label: {
+                                ShareRowButton(width: proxy.size.width - 16, label: "Hide", iconName: "eye.slash")
+                            }.foregroundColor(.black)
+                            Divider()
+                            Button {
+                                
+                            } label: {
+                                ShareRowButton(width: proxy.size.width - 16, label: "Report", iconName: "info.bubble")
+                            }.foregroundColor(.red)
+                        }.background(Color(uiColor: .secondarySystemBackground)).cornerRadius(12)
+                    }
+                }
+                
+            }.padding(.horizontal, 16).padding(.top, 34).presentationDetents([.medium]).presentationDragIndicator(.visible)
+        }
+    }
+}
+
+struct ShareButton: View {
+    var size: CGFloat = (370 / 4 - 20)
+    var label: String = "link"
+    var iconName: String = "link"
+    
+    var body: some View {
+        VStack {
+            Image(systemName: iconName).foregroundColor(Color.black).font(.title)
+            Text(label).font(.caption).foregroundColor(Color.black).padding(.top, 2)
+        }.frame(width:size, height: size)
+            .background(Color(uiColor: .secondarySystemBackground))
+            .cornerRadius(12)
+    }
+}
+
+
+struct ShareRowButton: View {
+    var width: CGFloat = (370 / 4 - 20)
+    var label: String = "link"
+    var iconName: String = "link"
+    
+    var body: some View {
+        HStack(spacing: 0) {
+            Image(systemName: iconName).font(.title2)
+            Text(label).padding(.leading, 14)
+            Spacer()
+        }.background(Color(uiColor: .secondarySystemBackground)).padding(.vertical, 12).padding(.horizontal, 16).frame(width: width)
     }
 }

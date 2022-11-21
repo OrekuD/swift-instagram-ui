@@ -34,13 +34,15 @@ struct ContentView: View {
     
     
     var body: some View {
-        VStack(spacing: 0) {
-            TabView(selection: $selectedTab) {
-                ForEach(Tab.allCases, id: \.rawValue) {
-                    tab in getScreen(screen: tab).tag(tab)
+        NavigationStack {
+            VStack(spacing: 0) {
+                TabView(selection: $selectedTab) {
+                    ForEach(Tab.allCases, id: \.rawValue) {
+                        tab in getScreen(screen: tab).tag(tab)
+                    }
                 }
+                CustomTabView(selectedTab: $selectedTab)
             }
-            CustomTabView(selectedTab: $selectedTab)
         }
     }
 }
